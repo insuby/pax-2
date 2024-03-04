@@ -20,17 +20,17 @@
     left: 0;
   }
 
-  .css-1ai476f-MuiButtonBase-root-MuiTab-root.Mui-selected {
-    color: #FF8C64 !important;
-    text-align: left;
-  }
-
+  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary,
   .MuiButtonBase-root-MuiTab-root.Mui-selected {
-    color: #FF8C64 !important;
+    width: 33% !important;
     align-items: baseline !important;
   }
 
-  .css-1ai476f-MuiButtonBase-root-MuiTab-root {
+  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected{
+    color: #FF8C64;
+  }
+
+  .MuiButtonBase-root.MuiTab-root {
     align-items: baseline !important;
     padding-left: 2rem;
   }
@@ -83,8 +83,7 @@
       }
     }
 
-    .css-1ai476f-MuiButtonBase-root-MuiTab-root,
-    .MuiButtonBase-root-MuiTab-root.Mui-selected {
+    .MuiButtonBase-root-MuiTab-root {
       width: 33% !important;
     }
   }
