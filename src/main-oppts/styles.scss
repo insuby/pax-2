@@ -49,6 +49,10 @@
     flex-direction: column-reverse;
     height: 523px;
 
+    ul {
+      width: 100% !important;
+    }
+
     &__second {
       height: 261px;
     }
