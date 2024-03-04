@@ -22,7 +22,7 @@
 
   .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary,
   .MuiButtonBase-root-MuiTab-root.Mui-selected {
-    width: 33% !important;
+    //width: 33% !important;
     align-items: baseline !important;
   }
 
@@ -83,7 +83,7 @@
       }
     }
 
-    .MuiButtonBase-root-MuiTab-root {
+    .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
       width: 33% !important;
     }
   }
