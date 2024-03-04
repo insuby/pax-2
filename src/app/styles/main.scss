@@ -49,7 +49,7 @@ section:not(.footer) {
 }
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: 50%  !important;
+  width: 50%;
   right: 0 !important;
   left: unset !important;
 }
@@ -60,6 +60,7 @@ section:not(.footer) {
   }
 
   .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 100%  !important;
     bottom: 0 !important;
   }
 
@@ -69,12 +70,12 @@ section:not(.footer) {
   }
 
   ul {
-    width: 100% !important;
+    //width: 100% !important;
 
     li {
       font-size: 4vw !important;
       height: fit-content !important;
-      width: 100% !important;
+      //width: 100% !important;
       padding-left: 16px !important;
     }
   }
