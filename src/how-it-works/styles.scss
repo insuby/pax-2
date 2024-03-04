@@ -1,0 +1,61 @@
+.how-it-works {
+  font-size: 1vw;
+  padding: 1rem 2rem;
+
+  .swiper-slide > div {
+    display: flex;
+
+    & > div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    height: 516px;
+
+    &_1 {
+      background-image: url("../../public/hiw-1.png");
+    }
+
+    &_2 {
+      background-image: url("../../public/hiw-2.png");
+    }
+
+    &_3 {
+      background-image: url("../../public/hiw-3.png");
+    }
+
+    &_4 {
+      background-image: url("../../public/hiw-4.png");
+    }
+
+    &_5 {
+      background-image: url("../../public/hiw-5.png");
+    }
+
+    &_6 {
+      background-image: url("../../public/hiw-6.png");
+    }
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .how-it-works {
+    height: 510px;
+
+    &__slide {
+      height: 260px;
+    }
+
+    .swiper-slide {
+      & > div:first-child {
+        flex-direction: column;
+      }
+    }
+  }
+
+}
