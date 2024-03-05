@@ -50,6 +50,8 @@
 
 @media screen and (max-width: 575px) {
   .comments {
+    height: unset;
+
     & > div {
       flex-direction: column;
       row-gap: 2rem;
@@ -59,7 +61,7 @@
       & > div {
         width: unset !important;
 
-        height: 330px;
+        height: 270px;
         display: flex;
         align-items: center;
         justify-content: center;

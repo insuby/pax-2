@@ -55,6 +55,7 @@
 
 @media screen and (max-width: 575px) {
   .automatisation {
+    height: unset;
     flex-direction: column;
     row-gap: 2rem;
     width: unset !important;
@@ -67,7 +68,7 @@
     & > div {
       width: unset !important;
 
-      height: 330px;
+      height: 270px;
       display: flex;
       align-items: center;
       justify-content: center;
