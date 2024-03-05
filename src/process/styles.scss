@@ -77,7 +77,8 @@
     }
 
     .MuiOutlinedInput-root, .MuiOutlinedInput, .MuiInput {
-      background-color: transparent;
+      overflow: hidden;
+      background-color: #ffffff20;
       border-color: white;
       color: white;
     }
