@@ -49,9 +49,18 @@ section:not(.footer) {
 }
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: 50%;
+  width: 50% !important;
   right: 0 !important;
   left: unset !important;
+}
+
+.swiper-pagination-bullet {
+  width: 30px !important;
+  border-radius: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #5FD98E !important;
 }
 
 @media screen and (max-width: 575px) {
@@ -60,7 +69,7 @@ section:not(.footer) {
   }
 
   .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    width: 100%  !important;
+    width: 100% !important;
     bottom: 0 !important;
   }
 

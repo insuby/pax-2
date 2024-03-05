@@ -32,6 +32,10 @@
     position: absolute;
     bottom: 1rem;
 
+    button {
+      min-width: unset !important;
+    }
+
     span {
       padding-left: 2rem;
       color: #0098FB;
@@ -73,7 +77,7 @@
       height: 80px;
       position: unset;
 
-      .css-i4bv87-MuiSvgIcon-root {
+      svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium {
         width: 30px;
         height: 30px;
       }

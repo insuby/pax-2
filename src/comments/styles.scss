@@ -65,5 +65,12 @@
         justify-content: center;
       }
     }
+
+    &__second {
+      & p:first-child {
+        display: none;
+      }
+    }
   }
+
 }
