@@ -46,7 +46,6 @@ export const Header = () => {
                   width: 50,
                   height: 50,
                 }} />
-
             }
           </IconButton>
           <Menu
