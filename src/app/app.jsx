@@ -27,7 +27,6 @@ const theme = createTheme({
         input: {
           height: 43,
           padding: '.75rem 1.5rem',
-          fontSize: '.7vw',
           borderColor: '#151515',
         },
         root: {
@@ -43,7 +42,6 @@ const theme = createTheme({
       styleOverrides: {
         contained: {
           height: 40,
-          fontSize: '.8vw',
           borderRadius: '5rem',
         },
         outlined: {

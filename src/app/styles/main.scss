@@ -3,7 +3,7 @@
 
 html, body {
   padding: 1rem;
-  font-size: 1vw;
+  font-size: 16px;
   font-family: Ubuntu, serif;
   font-weight: 400;
   background-color: #F6F9FB;
@@ -36,7 +36,7 @@ body {
 }
 
 .section-header {
-  font-size: 2vw;
+  font-size: 46px;
 }
 
 p:not(.section-header) {
@@ -64,9 +64,21 @@ section:not(.footer) {
   background-color: #5FD98E !important;
 }
 
+.section-header_desktop {
+  display: block !important;
+}
+
+.section-header_mobile {
+  display: none !important;
+}
+
 @media screen and (max-width: 575px) {
-  br:first-child {
-    display: none;
+  html {
+    padding: 0;
+  }
+
+  body {
+    padding: .3rem;
   }
 
   .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -74,9 +86,17 @@ section:not(.footer) {
     bottom: 0 !important;
   }
 
+  #root {
+    row-gap: 1rem;
+  }
+
   section {
     min-height: fit-content !important;
-    padding: 3rem 1rem
+    padding: .5rem !important;
+
+    &:first-child {
+      padding: .3rem 1rem !important;
+    }
   }
 
   ul {
@@ -151,11 +171,16 @@ section:not(.footer) {
       width: 100%;
     }
   }
-}
 
-
-@media screen and (max-width: 575px) {
   .MuiDialogContent-root.MuiDialogContent-dividers {
     width: unset !important;
+  }
+
+  p.section-header.section-header_desktop {
+    display: none !important;
+  }
+
+  p.section-header.section-header_mobile {
+    display: block !important;
   }
 }

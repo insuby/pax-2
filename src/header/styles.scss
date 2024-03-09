@@ -1,7 +1,8 @@
 .header {
   background-color: #C4DBEA;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 4rem 0 4rem;
   border-radius: var(--border-radius);
+  overflow: hidden;
 
   svg {
     width: fit-content;
@@ -124,7 +125,7 @@
       }
 
       &__second {
-        height: 331px;
+        height: 347px;
         background-size: cover;
       }
     }

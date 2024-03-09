@@ -16,7 +16,8 @@ export const Service = () => {
   return (
     <section id="service" className="service">
       <div>
-        <p className="section-header">Попробуйте наш сервис <br /> <b>уже сегодня</b></p>
+        <p className="section-header section-header_desktop">Попробуйте наш сервис <br /> <b>уже сегодня</b></p>
+        <p className="section-header section-header_mobile">Попробуйте наш сервис <b> <br /> уже сегодня</b></p>
         <Button
           variant="contained"
           style={{
@@ -34,7 +35,7 @@ export const Service = () => {
       >
         <DialogTitle className="dialog-title">
           <p className="section-header"><b>Связаться с нами</b></p>
-          <p>Оставьте свой телефон или почту <br/> и мы с вами свяжемся!</p>
+          <p>Оставьте свой телефон или почту <br /> и мы с вами свяжемся!</p>
         </DialogTitle>
         <DialogContent dividers>
           <div className="dialog-content">

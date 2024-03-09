@@ -4,7 +4,8 @@ export const MainOppts = () => {
   return (
     <section id="main-oppts" className="main-oppts">
       <div className="main-oppts__first">
-        <p className="section-header"><b>Ключевые возможности</b> <br/> для клиник</p>
+        <p className="section-header section-header_desktop"><b>Ключевые возможности</b> <br /> для клиник</p>
+        <p className="section-header section-header_mobile"><b>Ключевые возможности</b> <br /> для клиник</p>
         <ul className="main-oppts__list">
           <li>
             Закупка, расфасовка и упаковка персональных лекарств для клиента
@@ -17,7 +18,7 @@ export const MainOppts = () => {
           </li>
         </ul>
       </div>
-      <div className="main-oppts__second"/>
+      <div className="main-oppts__second" />
     </section>
   );
 };

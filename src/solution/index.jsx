@@ -12,9 +12,10 @@ export const Solution = () => {
   return (
     <section id="solution" className="solution">
       <div className="solution__tab">
-        <p className="section-header"><b>Решение</b><br />
+        <p className="section-header section-header_desktop"><b>Решение</b><br />
           разработано <br />
           для:</p>
+        <p className="section-header section-header_mobile"><b>Решение</b><br /> разработано для:</p>
         <Tabs
           orientation="vertical"
           variant="scrollable"
@@ -55,7 +56,7 @@ function TabPanel(props) {
     <div
       role="tabpanel"
       style={{
-        display: value !== index ? 'none' : 'block'
+        display: value !== index ? 'none' : 'block',
       }}
       // hidden={value !== index}
       id={`vertical-tabpanel-${index}`}

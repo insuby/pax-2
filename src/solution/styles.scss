@@ -10,6 +10,7 @@
     &__desktop {
       display: block !important;
     }
+
     &__mobile {
       display: none !important;
     }
@@ -22,11 +23,12 @@
 
   .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary,
   .MuiButtonBase-root-MuiTab-root.Mui-selected {
-    //width: 33% !important;
     align-items: baseline !important;
+    font-size: 24px;
+    font-weight: 400;
   }
 
-  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected{
+  .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected {
     color: #FF8C64;
   }
 
@@ -78,6 +80,7 @@
       &__desktop {
         display: none !important;
       }
+
       &__mobile {
         display: block !important;
       }
@@ -85,6 +88,10 @@
 
     .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary {
       width: 33% !important;
+      margin: 0;
+      padding: 0;
+      padding-left: 1rem;
+      font-size: 12px !important;
     }
   }
 }

@@ -55,7 +55,7 @@ export const Header = () => {
             <MenuItem onClick={handleClose}>Контакты</MenuItem>
             <div style={{ height: 20 }} />
             <MenuItem style={{ fontWeight: 900 }}>+7 495 006 2157</MenuItem>
-            <MenuItem style={{ fontWeight: 900, display: 'flex', columnGap: '20px' }} >
+            <MenuItem style={{ fontWeight: 900, display: 'flex', columnGap: '20px' }}>
               <Button variant="contained">
                 Врач
               </Button>
@@ -96,15 +96,19 @@ export const Header = () => {
             <p className="section-header" style={{ margin: 0 }}>
               <b>Комплексный продукт</b> для сбора лекарственных препаратов в персональные наборы для пациентов клиник
             </p>
-            <p className="sub-block__action-title">Есть вопросы, мы с Вами свяжемся?</p>
-            <div className="sub-block__form">
-              <TextField id="name" variant="outlined" placeholder="Ваше Имя" required />
-              <InputMask id="phone" mask="+7 (999) 999 99-99" placeholder="+7 (999) 999 99-99">
-                {(inputProps) => <TextField {...inputProps} type="tel" required />}
-              </InputMask>
-              <Button variant="contained" style={{
-                padding: '0 1.4rem',
-              }}>Отправить</Button>
+            <div style={{
+              display: 'grid'
+            }}>
+              <p className="sub-block__action-title">Есть вопросы, мы с Вами свяжемся?</p>
+              <div className="sub-block__form">
+                <TextField id="name" variant="outlined" placeholder="Ваше Имя" required />
+                <InputMask id="phone" mask="+7 (999) 999 99-99" placeholder="+7 (999) 999 99-99">
+                  {(inputProps) => <TextField {...inputProps} type="tel" required />}
+                </InputMask>
+                <Button variant="contained" style={{
+                  padding: '0 1.4rem',
+                }}>Отправить</Button>
+              </div>
             </div>
           </div>
           <div className="sub-block__second"></div>

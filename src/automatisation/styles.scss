@@ -7,10 +7,10 @@
   height: 669px;
 
   &__first {
-    width: 50%;
+    width: 45%;
     border-radius: var(--border-radius);
     background-color: white;
-    padding: 1rem;
+    padding: 4rem 2rem 0 2rem;
     position: relative;
 
     display: flex;
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 1rem;
+    bottom: 4rem;
 
     button {
       min-width: unset !important;
@@ -57,9 +57,9 @@
   .automatisation {
     height: unset;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 1rem;
     width: unset !important;
-    padding: 2rem;
+    padding: .5rem;
 
     button {
       width: unset !important;
@@ -68,7 +68,7 @@
     & > div {
       width: unset !important;
 
-      height: 270px;
+      height: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -95,6 +95,8 @@
     }
 
     &__first {
+      padding: 2rem .5rem 2rem .5rem;
+
       p {
         padding-left: 20px;
         width: 100% !important;
