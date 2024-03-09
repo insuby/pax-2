@@ -5,9 +5,15 @@ import InputMask from 'react-input-mask';
 import { Fragment, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { cx } from '@emotion/css';
 
 export const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [active, setActive] = useState(false);
+
+  const onClick = () => {
+    setActive(() => !active);
+  };
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -56,10 +62,20 @@ export const Header = () => {
             <div style={{ height: 20 }} />
             <MenuItem style={{ fontWeight: 900 }}>+7 495 006 2157</MenuItem>
             <MenuItem style={{ fontWeight: 900, display: 'flex', columnGap: '20px' }}>
-              <Button variant="contained">
+              <Button
+                variant="contained"
+                className={cx({
+                  'active': active,
+                })}
+                onClick={onClick}>
                 Врач
               </Button>
-              <Button variant="contained">
+              <Button
+                variant="contained"
+                className={cx({
+                  'active': !active,
+                })}
+                onClick={onClick}>
                 Пациент
               </Button>
             </MenuItem>
@@ -80,12 +96,22 @@ export const Header = () => {
           <ul>
             <li>+7 495 006 2157</li>
             <li>
-              <Button variant="contained">
+              <Button
+                variant="contained"
+                className={cx({
+                  'active': active,
+                })}
+                onClick={onClick}>
                 Врач
               </Button>
             </li>
             <li>
-              <Button variant="contained">
+              <Button
+                variant="contained"
+                className={cx({
+                  'active': !active,
+                })}
+                onClick={onClick}>
                 Пациент
               </Button>
             </li>
@@ -97,7 +123,7 @@ export const Header = () => {
               <b>Комплексный продукт</b> для сбора лекарственных препаратов в персональные наборы для пациентов клиник
             </p>
             <div style={{
-              display: 'grid'
+              display: 'grid',
             }}>
               <p className="sub-block__action-title">Есть вопросы, мы с Вами свяжемся?</p>
               <div className="sub-block__form">
